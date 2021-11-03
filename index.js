@@ -25,11 +25,11 @@ const CONNECTION_URL = 'mongodb+srv://krishna:Medbus2020@cluster0.hrjbe.mongodb.
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(CONNECTION_URL)
     .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
     .catch((error) => console.log(error.message))
 
-// mongoose.set('useFindAndModify', false);
+
 
 
 
